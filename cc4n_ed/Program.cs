@@ -6,7 +6,9 @@ namespace cc4n_ed
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string input = Console.ReadLine();
+            int x = Int32.Parse(input);
+            Console.WriteLine($"O valor digitado foi {x}. Blz? Alguma dúvida?");
         }
     }
 }
