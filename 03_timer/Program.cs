@@ -13,6 +13,11 @@ namespace _03_timer
             BuildArray(nums);
             sw.Stop();
             Console.WriteLine($"Tempo para construir = {sw.Elapsed}");
+
+            sw.Start();
+            PrintArray(nums);
+            sw.Stop();
+            Console.WriteLine($"Tempo para imprimir = {sw.Elapsed}");
         }
 
         static void BuildArray(int[] arr){
