@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_timer", "03_timer\03_tim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_vetores", "04_vetores\04_vetores.csproj", "{819CCF2E-C6EB-4720-98BD-9829C0E2EEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_notas", "05_notas\05_notas.csproj", "{409FB0F2-1BA4-4F5E-86FB-7FB6DCE1B512}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_notas", "05_notas\05_notas.csproj", "{409FB0F2-1BA4-4F5E-86FB-7FB6DCE1B512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_ordenacao_simples", "06_ordenacao_simples\06_ordenacao_simples.csproj", "{717FD244-A704-4358-8A08-F17F6933E25D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{409FB0F2-1BA4-4F5E-86FB-7FB6DCE1B512}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{409FB0F2-1BA4-4F5E-86FB-7FB6DCE1B512}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{409FB0F2-1BA4-4F5E-86FB-7FB6DCE1B512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717FD244-A704-4358-8A08-F17F6933E25D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717FD244-A704-4358-8A08-F17F6933E25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717FD244-A704-4358-8A08-F17F6933E25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717FD244-A704-4358-8A08-F17F6933E25D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
