@@ -5,11 +5,11 @@ class Program
     static void Main(string[] args)
     {
         //Inicializar vetor
-        int[] vetor1 = new int[10];
+        int[] vetor1 = new int[1000];
         Random rand = new Random();
         for (int i = 0; i < vetor1.Length; i++)
         {
-            vetor1[i] = rand.Next(0, 100);
+            vetor1[i] = rand.Next(0, 1000);
         }
 
         //Ordenar
