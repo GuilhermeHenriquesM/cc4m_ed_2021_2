@@ -8,13 +8,16 @@ class Ordenacao
 {
     public void Bubblesort(int[] vet)
     {
-        for (int i = 0; i < vet.Length - 1; i++)
+        for (int j = 0; j < vet.Length; j++)
         {
-            if (vet[i] > vet[i+1])
+            for (int i = 0; i < vet.Length - 1; i++)
             {
-                int aux = vet[i];
-                vet[i] = vet[i + 1];
-                vet[i + 1] = aux;
+                if (vet[i] > vet[i+1])
+                {
+                    int aux = vet[i];
+                    vet[i] = vet[i + 1];
+                    vet[i + 1] = aux;
+                }
             }
         }
     }
