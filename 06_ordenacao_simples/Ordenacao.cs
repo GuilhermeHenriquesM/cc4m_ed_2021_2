@@ -28,7 +28,17 @@ class Ordenacao
     }
     public void Insertionsort(int[] vet)
     {
-
+        for (int i = 0; i < vet.Length; i++)
+        {
+            int aux = vet[i];
+            int indice = i;
+            while (indice > 0 && aux < vet[indice - 1])
+            {
+                vet[indice] = vet[indice - 1];
+                indice--;
+            }
+            vet[indice] = aux; //insert
+        }
     }
     public void Selectionsort(int[] vet)
     {
