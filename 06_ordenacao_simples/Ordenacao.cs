@@ -32,6 +32,19 @@ class Ordenacao
     }
     public void Selectionsort(int[] vet)
     {
-
+        for (int j = 0; j < vet.Length; j++)
+        {
+            int menorInndice = j;
+            for (int i = j+1; i < vet.Length; i++)
+            {
+                if(vet[i] < vet[menorInndice])
+                {
+                    menorInndice = i;
+                }
+            }
+            int aux = vet[j];
+            vet[j] = vet[menorInndice];
+            vet[menorInndice] = aux;
+        }
     }
 }

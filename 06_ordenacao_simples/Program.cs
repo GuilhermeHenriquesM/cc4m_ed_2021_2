@@ -14,7 +14,7 @@ class Program
 
         //Ordenar
         Ordenacao ordenacao = new Ordenacao();
-        ordenacao.Bubblesort(vetor1);
+        ordenacao.Selectionsort(vetor1);
 
         //Exibir
         foreach (var item in vetor1)
