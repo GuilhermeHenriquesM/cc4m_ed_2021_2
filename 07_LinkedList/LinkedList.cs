@@ -2,6 +2,8 @@
 class LinkedList
 {
     public Node head;
+    private int _count = 0;
+
     public LinkedList()
     {
         head = null;
@@ -11,6 +13,8 @@ class LinkedList
         Node node = new Node(valor);
         node.next = head;
         head = node;
+        
+        _count++;
     }
     public void Print()
     {
@@ -40,6 +44,7 @@ class LinkedList
         if(head != null && head.data == key)
         {
             head = head.next;
+            _count--;
             return;
         }
         //Caso geral
@@ -49,8 +54,15 @@ class LinkedList
             aux = aux.next;
         }
         //Garantir que encontrou antes de remover
-        if(aux.next != null)
+        if(aux.next != null) 
+        { 
             aux.next = aux.next.next;
+            _count--;
+        }
+    }
+    public int Count()
+    {
+        return _count;
     }
 
     //addLast

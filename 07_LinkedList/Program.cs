@@ -15,6 +15,7 @@ class Program
         list.Remove(1);
         //list.Remove(4);
         list.Print();
+        Console.WriteLine(list.Count());
     }
 }
 
