@@ -1,5 +1,4 @@
 ﻿using System;
-
 class LinkedList
 {
     public Node head;
@@ -7,14 +6,12 @@ class LinkedList
     {
         head = null;
     }
-
     public void AddFirst(int valor)
     {
         Node node = new Node(valor);
         node.next = head;
         head = node;
     }
-
     public void Print()
     {
         Node aux = head;
@@ -25,14 +22,40 @@ class LinkedList
         }
         Console.WriteLine("[null]");
     }
+    public bool IsEmpty()
+    {
+        return head == null;
+    }
+    public Node Find(int key)
+    {
+        Node aux = head;
+        while (aux != null && aux.data != key)
+        {
+            aux = aux.next;
+        }
+        return aux;
+    }
+    public void Remove(int key)
+    {   //Se tiver que remover o primeiro
+        if(head != null && head.data == key)
+        {
+            head = head.next;
+            return;
+        }
+        //Caso geral
+        Node aux = head;
+        while(aux.next != null && aux.next.data != key)
+        {
+            aux = aux.next;
+        }
+        //Garantir que encontrou antes de remover
+        if(aux.next != null)
+            aux.next = aux.next.next;
+    }
 
     //addLast
 
     //addOrdered
-
-    //find
-
-    //remove
 
     //count
 
