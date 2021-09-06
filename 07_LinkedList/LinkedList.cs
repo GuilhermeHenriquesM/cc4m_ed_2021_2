@@ -64,9 +64,24 @@ class LinkedList
     {
         return _count;
     }
+    public void Clear()
+    {
+        if (head == null)
+            return;
 
-    //Clear
+        Node ant = head;
+        Node aux = head.next;
 
+        while (aux != null)
+        {
+            ant.next = null;
+            ant = aux;
+            aux = aux.next;
+        }
+
+        head = null;
+        _count = 0;
+    }
     //addLast
 
     //addOrdered
