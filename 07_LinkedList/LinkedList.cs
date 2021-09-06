@@ -82,10 +82,43 @@ class LinkedList
         head = null;
         _count = 0;
     }
-    //addLast
-
-    //addOrdered
-
-
+    public void AddOrdered(int valor)
+    {
+        if(head == null || head.data > valor)
+        {
+            AddFirst(valor);
+        }
+        else { 
+            Node aux = head;
+            while(aux.next != null 
+                            && aux.next.data < valor)
+            {
+                aux = aux.next;
+            }
+            Node newNode = new Node(valor);
+            newNode.next = aux.next;
+            aux.next = newNode;
+            _count++;
+        }
+    }
+    public void AddLast(int valor)
+    {
+        if(head == null)
+        {
+            AddFirst(valor);
+        }
+        else
+        {
+            Node aux = head;
+            while (aux.next != null)
+            {
+                aux = aux.next;
+            }
+            Node newNode = new Node(valor);
+            newNode.next = null;
+            aux.next = newNode;
+            _count++;
+        }
+    }
 }
 
