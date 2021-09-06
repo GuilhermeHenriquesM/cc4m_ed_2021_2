@@ -65,11 +65,12 @@ class LinkedList
         return _count;
     }
 
+    //Clear
+
     //addLast
 
     //addOrdered
 
-    //count
 
 }
 
